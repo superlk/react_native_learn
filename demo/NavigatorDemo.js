@@ -9,6 +9,9 @@ import {
     createAppContainer,
     createSwitchNavigator
 } from 'react-navigation'
+import Ionicons from 'react-native-vector-icons/Ionicons'; //导出矢量图标
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
 import HomePage from './HomePage';
 import Page1 from './Page1';
 import Page2 from './Page2';
@@ -16,8 +19,11 @@ import Page3 from './Page3';
 import Page4 from './Page4';
 import Page5 from './Page5';
 import Login from './Login';
-import Ionicons from 'react-native-vector-icons/Ionicons'; //导出矢量图标
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import FasterListDemo from './FasterListDemo';
+import SwipeableFasterListDemo from './SwipeableFasterListDemo';
+import SectionListDemo from './SectionListDemo';
+
+
 
 // 导航器
 
@@ -248,6 +254,24 @@ const AppStackNavigator = createStackNavigator({
         screen: DrawerNav,
         navigationOptions: {
             title: 'DrawerNav'
+        }
+    },
+    FasterListDemo:{
+        screen:FasterListDemo,
+        navigationOptions: {
+            title: 'FasterListDemo'
+        }
+    },
+    SwipeableFasterListDemo:{
+        screen:SwipeableFasterListDemo,
+        navigationOptions: {
+            title: 'SwipeableFasterListDemo'
+        }
+    },
+    SectionListDemo:{
+        screen:SectionListDemo,
+        navigationOptions: {
+            title: 'SectionListDemo'
         }
     }
 

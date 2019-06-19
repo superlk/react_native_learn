@@ -17,7 +17,7 @@ export default class HomePage extends Component<Props> {
     static navigationOptions={  //静态方法
         title:'Home1',
         headerBackTitle:'返回哈哈' // 返回按钮，多了没法显示
-    }
+    };
     render() {
         const {navigation} = this.props;
         return (
@@ -47,6 +47,19 @@ export default class HomePage extends Component<Props> {
                         onPress={()=>{
                             navigation.navigate('DrawerNav')
                         }}/>
+                <Button title={'Go to FasterList '}
+                        onPress={()=>{
+                            navigation.navigate('FasterListDemo')
+                        }}/>
+                <Button title={'Go to SwipeableFasterListDemo '}
+                        onPress={()=>{
+                            navigation.navigate('SwipeableFasterListDemo')
+                        }}/>
+                <Button title={'Go to SectionListDemo '}
+                        onPress={()=>{
+                            navigation.navigate('SectionListDemo')
+                        }}/>
+
 
             </View>
         );
